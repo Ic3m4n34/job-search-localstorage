@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <style>
+      body {
+        background: black;
+      }
+
+      .job-search {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .job-search__button {
+        border-radius: 6px;
+        background: orange;
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        margin-left: 24px;
+      }
+
+      .job-search__input {
+        padding: 6px;
+        border: 1px solid #ededed;
+      }
+
+      .job-search__input--title {
+        border-radius: 6px 0 0 6px;
+        margin-right: 4px;
+      }
+
+      .job-search__input--location {
+        border-radius: 0 6px 6px 0;
+      }
+
+      .job-search__inputs {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <div class="job-search">
+      <div class="job-search__inputs">
+        <input
+          type="text"
+          id="title"
+          class="job-search__input job-search__input--title"
+          placeholder="Job Title, Industry, Keywords"
+        />
+        <input
+          type="text"
+          class="job-search__input job-search__input--location"
+          placeholder="Location"
+        />
+      </div>
+      <button class="job-search__button">Search</button>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
